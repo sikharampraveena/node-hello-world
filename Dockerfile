@@ -1,4 +1,4 @@
-FROM node:12-slim
+FROM node:18.6.0
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -10,5 +10,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
+EXPOSE 8001
 CMD [ "node", "app.js" ]
